@@ -3754,6 +3754,41 @@ dependencies = [
 ]
 
 [[package]]
+name = "pallet-coop-asset-profile"
+version = "2.0.0"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "hex",
+ "pallet-balances",
+ "pallet-coop-member-profile",
+ "pallet-timestamp",
+ "pallet-treasury",
+ "parity-scale-codec",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "substrate-fixed",
+]
+
+[[package]]
+name = "pallet-coop-member-profile"
+version = "2.0.0"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "hex",
+ "pallet-balances",
+ "pallet-timestamp",
+ "pallet-treasury",
+ "parity-scale-codec",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "substrate-fixed",
+]
+
+[[package]]
 name = "pallet-democracy"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4015,6 +4050,21 @@ dependencies = [
  "parity-scale-codec",
  "serde",
  "sp-api",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
+name = "pallet-treasury"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b08dbe44924346f0728351265fb8c5ab80dd30f664e0a2a10f83597f4090264"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "pallet-balances",
+ "parity-scale-codec",
+ "serde",
  "sp-runtime",
  "sp-std",
 ]
